@@ -28,10 +28,10 @@ export class UserListComponent implements OnInit {
   }
 
   onLinkProfile(id: number) {
-    this.router.navigate([this.router.url + '/profile', id]);
+    this.router.navigate([this.router.url, 'profile', id]);
   }
 
   onAddProfile() {
-    this.router.navigate([this.router.url + '/profile']);
+    this.router.navigate([this.router.url, 'profile']);
   }
 }
