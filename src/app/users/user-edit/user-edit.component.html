@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <form [formGroup]="userForm">
+    <div class="form-group">
+      <label for="username">Имя</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        placeholder="Имя"
+        formControlName="name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="usersurname">Фамилия</label>
+      <input
+        type="text"
+        class="form-control"
+        id="usersurname"
+        placeholder="Фамилия"
+        formControlName="surname"
+      />
+    </div>
+    <button class="btn btn-primary mr-4" [disabled]="userForm.invalid" (click)="onSave()">
+      Сохранить
+    </button>
+    <button class="btn btn-danger" *ngIf="id != null" (click)="onDelete()">Удалить</button>
+  </form>
+</div>

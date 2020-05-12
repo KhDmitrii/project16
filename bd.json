@@ -1,0 +1,14 @@
+{
+  "musers": [
+    {
+      "name": "Ivan",
+      "surname": "Ivanov",
+      "id": 1
+    },
+    {
+      "name": "Vasya",
+      "surname": "Ivanov",
+      "id": 2
+    }
+  ]
+}
